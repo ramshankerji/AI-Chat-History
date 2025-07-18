@@ -1,3 +1,5 @@
+# Claude Sonnet 4
+
 # Question
 
 Analyze the following code and provide commentary. What it is doing, what it might be doing wrong and so on. In my follow-up instruction, I will ask to add small functionality.
