@@ -1,6 +1,8 @@
+# Question
+
 Analyze the following code and provide commentary. What it is doing, what it might be doing wrong and so on. In my follow-up instruction, I will ask to add small functionality.
 
-Edit
+# Answer
 This is a DirectX 12 graphics initialization and rendering code written in C++. Let me analyze what it's doing and identify potential issues:
 
 What the code is doing:
@@ -66,10 +68,10 @@ The code shows understanding of DirectX 12 concepts but needs significant cleanu
 
 
 
-
+# Question
 I don't see any index buffer in it. Than how come it is drawing triangles?
 
-Edit
+# Answer
 Great observation! You're absolutely right - there's no index buffer in this code. Here's how it's still able to draw triangles:
 
 Drawing Without Index Buffer
@@ -151,10 +153,10 @@ Index buffers become essential for complex meshes where vertices are shared betw
 
 
 
-
+# Question
 OK. Now modify this codes to use Index Buffer. Also extract away generation of Vertex Data and Index Data into a separate function. Even though those function will simply return hard coded values for now. Do not change / discard any comments, line styles and do not fix any error or perform any optimization. Just introduction of Index Buffer approach and extracting away generation of vertex/index data.
 
-Edit
+# Answer
 
 DirectX 12 Code with Index Buffer
 Code 
@@ -193,11 +195,11 @@ The code now uses the index buffer approach while producing the exact same visua
 
 
 
-
+# Question
 
 Can we have multiple vertex buffers + index buffer pair within same command list? Do not update code. Just tell me.
 
-Edit
+# Answer
 Yes, absolutely! You can have multiple vertex buffer + index buffer pairs within the same command list. This is a common and standard practice in DirectX 12. Here's how it works:
 
 Multiple Buffer Pairs in Same Command List
@@ -250,11 +252,11 @@ So yes, your current code structure could easily be extended to handle multiple 
 
 
 
-
+# Question
 
 Can I have let's say 25000 pairs within same drawliest call? Will it slow the rendering to a crawl? What is the industry standard number / order of magnitude?
 
-Edit
+# Answer
 Yes, you can have 25,000 pairs, but it will likely perform poorly due to draw call overhead. Here's the reality:
 
 Draw Call Overhead Reality
